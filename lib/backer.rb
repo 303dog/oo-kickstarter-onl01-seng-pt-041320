@@ -7,8 +7,9 @@ class Backer
     @backed_projects = []
   end
   
- # def backed_projects
-#  Project.new >> @backed_projects
- # end 
+  def backed_projects
+    Project.new.each do 
+      @backed_projects << self
+  end 
 
 end
